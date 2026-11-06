@@ -1,0 +1,16 @@
+[package]
+name = "unlimited-void"
+version = "1.0.0"
+edition = "2024"
+description = "Gojo Satoru Domain Expansion: Unlimited Void (100 blocks, press Y)"
+license = "MIT"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+horizon-mod-sdk = { git = "https://github.com/Stink-O/horizon", branch = "mod-api-input-ui-render-world" }
+
+[profile.release]
+opt-level = "s"
+lto = true
